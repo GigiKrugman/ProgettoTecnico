@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>Progetto Colloquio Tecnico</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="menu">
+          <ul class="menu-items">
+            <a href="#hero">About</a>
+            <a href="#cards-container">People</a>
+            <a href="#footer">Socials</a>
+          </ul>
+          <a href="#signup" class="signup">Signup</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero--section">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="/assets/1.jpg" alt="img-carousel-1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/2.jpg" alt="img-carousel-2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/3.jpg" alt="img-carousel-3" />
+        </div>
+        <div class="carousel-slide">
+          <img src="/assets/4.jpg" alt="img-carousel-4" />
+        </div>
+      </div>
+      <div class="text-wrapper">
+        <h1>Discover <span class="text-wrapper-span">South Africa</span></h1>
+        <h3>
+          Join us and discover one of the most breathtaking countries in the
+          world!
+        </h3>
+        <button>Start</button>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-favicon-main">
+        Why you should <span class="section-favicon-span">choose</span> us:
+      </h2>
+      <div class="section-content">
+        <div class="section-item">
+          <i class="fas fa-headset section-icon"></i>
+          <h4>Support 24/7</h4>
+          <p>Worldwide reach 24/7 with multilingual Support</p>
+        </div>
+        <div class="section-item">
+          <i class="fas fa-globe section-icon"></i>
+          <h4>Experience</h4>
+          <p>Years of experience to provide you the best service</p>
+        </div>
+        <div class="section-item">
+          <i class="fas fa-money-bill-wave section-icon"></i>
+          <h4>Best value money</h4>
+          <p>
+            We guarantee the best experiences without compromising on quality
+          </p>
+        </div>
+      </div>
+    </section>
+    <h2 class="card-main-header">Our Tour guides:</h2>
+    <section id="cards-container" class="cards-container"></section>
+    <div id="pagination" class="pagination"></div>
+    <section class="mailinglist">
+      <div class="mailinglist-content">
+        <h4 id="message">Join our Mailing list</h4>
+        <form id="mailing-form">
+          <input
+            id="email-input"
+            type="email"
+            placeholder="Your Email..."
+            required
+          />
+          <button type="submit" class="btn-form">Submit</button>
+        </form>
+        <p id="thankyou-message" style="display: none">
+          <i class="fas fa-check-circle"></i>
+          Thanks for the Email, please check your email.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer" id="footer">
+      <div class="footer-disclaimer">Traveligo Ltd - An Expedia's company</div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
